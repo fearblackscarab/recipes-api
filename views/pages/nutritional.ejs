@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+    <main class="main" id="main">
+        <% for(let i=0;i<8;i++){ %>
+            <% data.forEach(item=>{ %>
+                <div class="nutrition-div">
+                    <h2 class="recipe-title">
+                        <%= item.title %>
+                    </h2>
+                    <% for(const key in item.propertyArr[i]){ %>
+                        <p class="nutrient-item">
+                            <%= key %>: <%= item.propertyArr[i][key] %>
+                        </p>
+                    <% } %>
+                </div>
+            <% }) %>
+        <% } %>
+    </main>
+
+    <%- include('../partials/footer') %>

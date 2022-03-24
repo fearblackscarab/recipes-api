@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+
+<main class="main" id="main">
+    <h2 class="recipe-title">Recipes</h2>
+    <% data.forEach(item=>{ %>
+        <div class="recipe-div">
+            <p class="recipe-id"><%= item.id %>: </p>
+            <p class="recipe-name"><a href="/recipes/<%= item.id %>"><%= item.title %></a></p>
+        </div>
+    <% }) %>
+</main>
+
+<%- include('../partials/footer') %> 

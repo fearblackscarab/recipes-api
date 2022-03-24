@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+a{
+    color: red;
+}
+
+.top-nav{
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.top-nav-item{
+    color: red;
+}
+
+.recipe-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipe-id{
+    margin-right: 10px;
+}
